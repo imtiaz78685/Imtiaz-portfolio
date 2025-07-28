@@ -1,7 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Imtiaz Hussain | Full Portfolio</title>
@@ -29,6 +29,7 @@
     body.dark header, body.dark footer { background: #020617; }
     .toggle-btn { position: absolute; top: 20px; right: 30px; background: #38bdf8; color: white; border: none; padding: 8px 14px; border-radius: 6px; cursor: pointer; }
   </style>
+  
   <script>
     function toggleDarkMode() {
       document.body.classList.toggle('dark');
@@ -42,7 +43,7 @@
   <h1>Imtiaz Hussain</h1>
   <p>AI & Web Developer | Python, Automation, Creative Thinker</p>
   <nav>
-    <a href="#about">About</a><a href="#skills">Skills</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#languages">Languages</a><a href="#Education">Education</a><a href="#contact">Contact</a>
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#languages">Languages</a><a href="#Education">Education</a><a href="#contact Me">Contact Me</a></a><a href="#contact">Contact</a>
   </nav>
   <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
 </header>
@@ -144,12 +145,33 @@
 
 <section id="contact">
   <h2>Contact Me</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea rows="5" placeholder="Your Message"></textarea>
-    <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
-  </form>
+
+  <!-- 👤 Personal Contact Info -->
+  <div style="margin-bottom: 2rem; font-size: 1.1rem;">
+    <p><strong>🧑Name:</strong> Imtiaz Hussain</p>
+    <p><strong>🗺️Location:</strong> Faisalabad Punjab Pakistan</p>
+    <p><strong>📧Email:</strong>
+      <a href="mailto:imtiazhussian250@gmail.com" target="_blank">
+        imtiazhussian250@gmail.com
+      </a>
+    </p>
+    <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong>
+  <a href="https://wa.me/923006557250" target="_blank">
+    +92 300 6557250
+    </a>
+  </p>
+    <p><strong>📘Facebook:</strong>
+  <a href="https://www.facebook.com/S2Gimtiazv4" target="_blank">
+    <i class="fa-brands fa-facebook"></i> S2Gimtiazv4
+  </a>
+</p>
+<!-- 💬 Contact Form -->
+<form action="https://formspree.io/f/xnnzvpjg" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+</form>
 </section>
 
 </div>
